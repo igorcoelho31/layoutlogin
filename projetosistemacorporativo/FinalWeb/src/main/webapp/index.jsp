@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/homestyle.css">
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div class="menu-bar">
+      <h1 class="logo">Projeto<span>Integrador</span></h1>
+      <ul>
+     
+        <li><a href="#">Sobre</a></li>
+        <li><a href="LogoutServlet">Logout</a></li>
+      </ul>
+    </div>
+<section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Entrar</header>
+                    <form action="LoginServlet" method="post">
+                        <div class="field input-field">
+                            <input type="text" placeholder="Usuário" class="input" name="txtUsuario">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Senha" class="password" name="txtSenha">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Esqueceu sua senha?</a>
+                        </div>
+
+                        <div class="field button-field">
+                           <input type="submit" style="background-color:#1ad7d7; cursor:pointer; color:#fff;" value="Entrar">
+
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Não possui uma conta?<a href="#" class="link signup-link"> Registre-se</a></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form signup">
+                <div class="form-content">
+                    <header>Cadastrar</header>
+                    <form action="#">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input" name="txtUsuario">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Confirmar senha" class="password" name="txtSenha">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" placeholder="Confirmar senha" class="password" name="txtSenha">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="field button-field">
+                            <button type="submit" value="Entrar">Cadastrar</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Já possui uma conta? <a href="#" class="link login-link">Entrar</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <script src="js/script.js"></script>
+</body>
+</html>
